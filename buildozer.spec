@@ -5,7 +5,7 @@ package.domain = org.ratangg
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3==3.9.10,kivy
+requirements = python3,hostpython3,kivy
 orientation = portrait
 fullscreen = 0
 android.archs = arm64-v8a, armeabi-v7a
