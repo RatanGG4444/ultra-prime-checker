@@ -13,8 +13,11 @@ jobs:
         uses: digreatbrian/buildozer-action@v2
         with:
           python-version: 3.11
-          buildozer-cmd: buildozer init && buildozer -v android debug
-
+          buildozer-cmd: |
+            buildozer init
+            sed -i 's/#requirements = kivy/requirements = python3,kivy/' buildozer.spec
+            buildozer -v android debug
+            
       - name: Upload Finished APK
         uses: actions/upload-artifact@v4
         with:
