@@ -2,7 +2,7 @@
 title = Ultra Prime Checker
 package.name = ultraprimechecker
 package.domain = org.ratangg
-source.dir = .
+source.dir = ./
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 requirements = python3,hostpython3,kivy
